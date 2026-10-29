@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:key="pref_account_category"
+        app:title="@string/settings_account">
+        <Preference
+            app:key="pref_account_email"
+            app:title="@string/auth_account_email_title"
+            app:summary="" />
+        <Preference
+            app:key="pref_sign_out"
+            app:title="@string/settings_sign_out"
+            app:selectable="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/settings_alerts">
+
+        <SwitchPreferenceCompat
+            app:key="pref_expiry_alerts"
+            app:title="@string/settings_expiry_title"
+            app:summary="@string/settings_expiry_summary"
+            app:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/settings_matching">
+
+        <SwitchPreferenceCompat
+            app:key="pref_almost_there"
+            app:title="@string/settings_almost_title"
+            app:summary="@string/settings_almost_summary"
+            app:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/settings_units">
+
+        <ListPreference
+            app:key="pref_preferred_units"
+            app:title="@string/settings_units_title"
+            app:summary="%s"
+            app:entries="@array/unit_entries"
+            app:entryValues="@array/unit_values"
+            app:defaultValue="metric" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

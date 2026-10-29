@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "993350654970",
+    "project_id": "smart-pantry-manager-ae001",
+    "storage_bucket": "smart-pantry-manager-ae001.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993350654970:android:69dc9a69ff7613f82e6243",
+        "android_client_info": {
+          "package_name": "com.richfield.smartpantry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993350654970-39214m7bmmjcniejboa8pjoukif50g6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2Nl5E7PmX6vob3wOmJO8pMizdnWUWfOg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "993350654970-39214m7bmmjcniejboa8pjoukif50g6b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

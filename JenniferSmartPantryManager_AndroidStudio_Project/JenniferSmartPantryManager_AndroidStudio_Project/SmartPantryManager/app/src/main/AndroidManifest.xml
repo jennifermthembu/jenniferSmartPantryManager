@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartPantry">
+
+        <activity
+            android:name=".ui.AuthActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.AddEditIngredientActivity"
+            android:exported="false"
+            android:label="@string/title_add_ingredient"
+            android:theme="@style/Theme.SmartPantry.ActionBar"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <activity
+            android:name=".ui.RecipeDetailActivity"
+            android:exported="false"
+            android:label="@string/title_recipe_detail"
+            android:theme="@style/Theme.SmartPantry.ActionBar"
+            android:parentActivityName=".ui.MainActivity" />
+
+    </application>
+
+</manifest>
